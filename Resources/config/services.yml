@@ -1,0 +1,12 @@
+parameters:
+    darsadow_secure_api.security.authentication.provider.class: Darsadow\Bundle\SecureApiBundle\Security\Authentication\Provider\ApiProvider
+    darsadow_secure_api.security.authentication.listener.class: Darsadow\Bundle\SecureApiBundle\Security\Firewall\ApiListener
+
+services:
+    secure_api.security.authentication.provider:
+        class: %darsadow_secure_api.security.authentication.provider.class%
+        arguments: ['']
+
+    secure_api.security.authentication.listener:
+        class: %darsadow_secure_api.security.authentication.listener.class%
+        arguments: ["@security.context", "@security.authentication.manager"]

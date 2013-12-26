@@ -1,0 +1,26 @@
+{
+    "name": "darsadow/secure-api-bundle",
+    "type": "symfony-bundle",
+    "description": "Bundle for Stateless authentication based on token and user's device.",
+    "keywords": ["User management"],
+    "homepage": "http://darsadow.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dariusz Sadowski",
+            "email": "darsadow@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.2",
+        "symfony/framework-bundle": "~2.1",
+        "symfony/security-bundle": "~2.1"
+    },
+    "autoload": {
+        "psr-0": {
+            "Darsadow\\Bundle\\SecureApiBundle": ""
+        }
+    },
+    "target-dir": "Darsadow/Bundle/SecureApiBundle"
+}
