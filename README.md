@@ -7,6 +7,14 @@ Stateless authentication for APIs based on Symfony 2.
 
 ```composer require darsadow/secure-api-bundle```
 
+or
+
+```
+    // ...
+    "darsadow/secure-api-bundle": "dev-master"
+    // ...
+```
+
 Add bundle to your AppKernel.php
 
 ```php
